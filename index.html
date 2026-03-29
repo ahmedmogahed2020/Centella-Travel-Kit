@@ -4,568 +4,440 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
   <title>SKIN1004 Centella Travel Kit | مجموعة سنتيلا ترافيل كيت</title>
-  <meta name="description" content="مجموعة سنتيلا ترافيل كيت الأصلية 100% من SKIN1004: تهدئة فورية، ترميم حاجز البشرة، ترطيب نقي، مناسبة للبشرة الحساسة والحبوب. عرض خاص الآن." />
+  <meta name="description" content="مجموعة سنتيلا ترافيل كيت الأصلية 100% من SKIN1004: تهدئة فورية، ترميم حاجز البشرة، ترطيب نقي، مناسبة للبشرة الحساسة والحبوب. اطلبيها دلوقتي." />
   
   <meta property="og:type" content="product" />
   <meta property="og:title" content="SKIN1004 Centella Travel Kit | مجموعة سنتيلا ترافيل كيت" />
-  <meta property="og:description" content="مجموعة سنتيلا ترافيل كيت الأصلية 100% من SKIN1004: تهدئة فورية، ترميم حاجز البشرة، ترطيب نقي." />
+  <meta property="og:description" content="روتين كوري متكامل في شنطة واحدة. تهدئة فورية وترميم لحاجز البشرة." />
   <meta property="og:image" content="https://i.postimg.cc/wTgKRLyv/7186Six9KLL_AC_UF350_350_QL80.jpg" />
   
   <style>
     :root{
       --bg: #FAF7F3;
-      --bg2:#F6F0E8;
       --line:#E6DED4;
       --text:#1f2328;
       --muted:#6b7280;
-      --brand:#B79A6B;     /* gold */
-      --brand2:#8A6B3B;    /* deep gold */
+      --brand:#B79A6B;      /* Gold */
+      --brand-hover: #9c8258;
+      --brand2:#8A6B3B;    /* Deep gold */
       --chip:#FFF7EA;
-      --ok:#1a7f37;
-      --shadow: 0 10px 24px rgba(17,24,39,.08);
-      --radius: 16px;
-      --max: 980px;
+      --danger: #d93025;   /* Red for old price */
+      --success: #1a7f37;
+      --radius: 12px;
+      --max: 800px;        /* Made slightly narrower for better reading */
     }
 
     *{box-sizing:border-box}
     body{
       margin:0;
-      font-family: system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Noto Sans Arabic", "Noto Sans", "Apple Color Emoji","Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 70% -10%, rgba(183,154,107,.18), transparent 55%),
-                  radial-gradient(1000px 520px at 0% 30%, rgba(183,154,107,.10), transparent 55%),
-                  var(--bg);
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+      background-color: var(--bg);
       color:var(--text);
-      line-height:1.7;
+      line-height:1.8;
+      -webkit-font-smoothing: antialiased;
     }
 
-    a{color:inherit}
+    img { max-width: 100%; height: auto; display: block; }
+    
     .wrap{
       max-width: var(--max);
       margin: 0 auto;
-      padding: 18px 14px 34px;
+      padding: 24px 20px 60px;
+      background: #fff;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.03);
+      min-height: 100vh;
     }
 
-    /* Single flowing page: NO stacked cards */
     .section{
-      padding: 18px 0;
+      padding: 30px 0;
     }
+    
     .divider{
       height: 1px;
-      background: linear-gradient(90deg, transparent, var(--line), transparent);
-      margin: 6px 0;
+      background: var(--line);
+      margin: 10px 0;
     }
 
+    /* Hero Section */
     .topTag{
-      display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+      display:inline-block;
+      background: var(--chip);
       color: var(--brand2);
       font-weight: 700;
-      letter-spacing:.2px;
-    }
-    .dot{
-      width:10px;height:10px;border-radius:999px;
-      background: var(--brand);
-      box-shadow: 0 0 0 6px rgba(183,154,107,.14);
+      font-size: 13px;
+      padding: 6px 12px;
+      border-radius: 99px;
+      margin-bottom: 16px;
+      border: 1px solid rgba(183,154,107,.3);
     }
 
     .hero h1{
-      margin: 10px 0 6px;
-      font-size: clamp(22px, 3.4vw, 34px);
-      line-height:1.25;
+      margin: 0 0 12px;
+      font-size: clamp(24px, 4vw, 32px);
+      line-height: 1.4;
+      color: #111;
     }
+    
     .sub{
       color: var(--muted);
-      margin: 0 0 12px;
-      font-size: 14.5px;
+      margin: 0 0 24px;
+      font-size: 16px;
     }
 
+    /* Badges */
     .badges{
-      display:flex; flex-wrap:wrap; gap:10px;
-      margin: 10px 0 14px;
+      display:flex; flex-wrap:wrap; gap:12px;
+      margin-bottom: 24px;
     }
     .badge{
-      background: rgba(255,255,255,.55);
+      background: #f8f9fa;
       border: 1px solid var(--line);
-      padding: 8px 10px;
-      border-radius: 999px;
-      font-size: 13px;
+      padding: 8px 14px;
+      border-radius: var(--radius);
+      font-size: 14px;
       display:flex; gap:8px; align-items:center;
-      backdrop-filter: blur(6px);
+      color: #333;
     }
     .badge b{color:var(--brand2)}
-    .badge .ico{width:18px;text-align:center}
 
-    .priceRow{
-      display:flex; align-items:flex-end; justify-content:space-between;
-      gap:12px; flex-wrap:wrap;
-      padding: 10px 0 2px;
+    /* Pricing */
+    .price-container {
+      background: var(--chip);
+      padding: 20px;
+      border-radius: var(--radius);
+      border: 1px solid rgba(183,154,107,.2);
+      margin-bottom: 30px;
+      text-align: center;
     }
-    .prices{
-      display:flex; gap:12px; align-items:flex-end; flex-wrap:wrap;
+    .prices {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 16px;
+      flex-wrap: wrap;
+      margin-bottom: 8px;
     }
     .before{
-      color: #9aa3af;
+      color: var(--danger);
       text-decoration: line-through;
-      font-weight: 700;
-      font-size: 15px;
+      font-weight: 600;
+      font-size: 18px;
     }
     .after{
-      font-size: 28px;
+      font-size: 36px;
       font-weight: 900;
-      color: var(--brand2);
-      letter-spacing:.2px;
+      color: #111;
     }
     .save{
-      background: var(--chip);
-      border: 1px solid rgba(183,154,107,.35);
-      color: var(--brand2);
-      padding: 8px 10px;
-      border-radius: 999px;
-      font-weight: 800;
-      font-size: 13px;
-      box-shadow: 0 8px 18px rgba(183,154,107,.12);
-      white-space:nowrap;
+      display: inline-block;
+      background: #fff;
+      color: var(--success);
+      padding: 6px 16px;
+      border-radius: 99px;
+      font-weight: 700;
+      font-size: 14px;
+      border: 1px solid rgba(26,127,55,0.2);
     }
 
-    /* Gallery 6 images (placeholders) */
+    /* Gallery */
     .gallery{
       display:grid;
       grid-template-columns: repeat(3, 1fr);
-      gap:10px;
-      margin-top: 14px;
+      gap:12px;
+      margin-top: 20px;
     }
     .gimg{
-      position:relative;
-      border-radius: 14px;
+      border-radius: var(--radius);
       overflow:hidden;
-      background: linear-gradient(135deg, rgba(183,154,107,.14), rgba(255,255,255,.35));
       border: 1px solid var(--line);
       aspect-ratio: 1 / 1;
-      box-shadow: 0 10px 20px rgba(17,24,39,.06);
     }
     .gimg img{
       width:100%; height:100%;
       object-fit: cover;
-      display:block;
-    }
-    .gcap{
-      position:absolute;
-      inset:auto 10px 10px 10px;
-      background: rgba(255,255,255,.72);
-      border: 1px solid rgba(230,222,212,.8);
-      border-radius: 999px;
-      padding: 6px 10px;
-      font-size: 12.5px;
-      color:#3b3f45;
-      backdrop-filter: blur(6px);
     }
 
-    @media (max-width: 720px){
+    @media (max-width: 600px){
       .gallery{grid-template-columns: repeat(2, 1fr)}
     }
 
-    /* Text blocks */
+    /* Typography & Lists */
     h2{
-      margin: 0 0 6px;
-      font-size: 18px;
-      letter-spacing:.2px;
+      margin: 0 0 16px;
+      font-size: 22px;
+      color: #111;
     }
-    p{margin: 8px 0}
-    .muted{color:var(--muted)}
+    
+    .highlight{
+      color: var(--brand2);
+    }
 
-    /* Bullets without card */
     .bullets{
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap:8px 16px;
-      margin-top: 10px;
-      padding-inline-start: 18px;
-    }
-    .bullets li{
+      gap: 12px 20px;
+      padding-inline-start: 20px;
       margin: 0;
+      color: #333;
     }
-    @media (max-width: 720px){
+    @media (max-width: 600px){
       .bullets{grid-template-columns: 1fr}
     }
 
-    /* Product list */
+    /* Product Items */
     .items{
-      margin-top: 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
     }
     .item{
-      padding: 10px 0;
-      border-bottom: 1px dashed rgba(230,222,212,.9);
+      background: #fdfdfd;
+      padding: 16px;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
     }
-    .item:last-child{border-bottom:0}
     .item b{
+      display: block;
       color: var(--brand2);
+      font-size: 16px;
+      margin-bottom: 4px;
     }
     .mini{
-      font-size: 13.5px;
-      color: var(--muted);
-      margin-top: 2px;
+      font-size: 14px;
+      color: #444;
     }
 
-    /* Reviews: all visible */
+    /* Reviews */
     .reviewsHead{
       display:flex; align-items:center; justify-content:space-between;
-      gap:10px; flex-wrap:wrap;
-      margin-top: 4px;
+      margin-bottom: 20px;
     }
     .rating{
-      display:flex; align-items:center; gap:10px; flex-wrap:wrap;
-      color: var(--brand2);
-      font-weight: 900;
-    }
-    .stars{
-      letter-spacing: 1px;
-      font-size: 16px;
+      display:flex; align-items:center; gap:8px;
+      color: #f59e0b; /* Star color */
+      font-weight: 700;
     }
     .count{
       color: var(--muted);
-      font-weight: 700;
-      font-size: 13.5px;
+      font-weight: normal;
+      font-size: 14px;
     }
     .reviews{
-      margin-top: 10px;
       display:grid;
       grid-template-columns: 1fr 1fr;
-      gap:12px 18px;
+      gap: 16px;
     }
     .rev{
-      border-top: 1px solid var(--line);
-      padding-top: 10px;
+      background: #f9f9f9;
+      padding: 16px;
+      border-radius: var(--radius);
+      border: 1px solid #eee;
     }
     .rev .who{
       display:flex; align-items:center; justify-content:space-between;
-      gap:10px;
-      font-weight: 800;
-      color:#2b2b2b;
-      font-size: 13.5px;
+      font-weight: 700;
+      color:#111;
+      margin-bottom: 8px;
     }
-    .rev .who span{color:var(--muted); font-weight:700; font-size:12.5px}
-    .rev .txt{margin: 6px 0 0; color:#2d2f33; font-size: 13.8px}
-    @media (max-width: 720px){
+    .rev .who span{color:#f59e0b; font-size:12px}
+    .rev .txt{margin: 0; color:#444; font-size: 14px; line-height: 1.6;}
+    @media (max-width: 600px){
       .reviews{grid-template-columns: 1fr}
-    }
-
-    /* Why us */
-    .why{
-      margin-top: 10px;
-      display:grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 10px 16px;
-      padding-inline-start: 18px;
-    }
-    .why li{margin:0}
-    @media (max-width: 720px){
-      .why{grid-template-columns: 1fr}
     }
 
     /* FAQ */
     details{
-      border-top: 1px solid var(--line);
-      padding: 10px 0;
+      background: #fff;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      margin-bottom: 10px;
+      padding: 16px;
     }
     summary{
       cursor:pointer;
-      font-weight: 900;
-      color: var(--brand2);
+      font-weight: 700;
+      color: #111;
       list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
     }
     summary::-webkit-details-marker{display:none}
-    summary:after{
-      content:"＋";
-      float:left;
-      color: var(--brand2);
-      font-weight: 900;
-    }
-    details[open] summary:after{content:"—"}
-    details p{margin: 8px 0 0; color:#2d2f33}
-    .note{
-      font-size: 12.8px;
+    summary::after{
+      content: "▼";
+      font-size: 12px;
       color: var(--muted);
-      margin-top: 10px;
+      transition: transform 0.2s;
+    }
+    details[open] summary::after{
+      transform: rotate(180deg);
+    }
+    details p{
+      margin: 12px 0 0; 
+      color:#444;
+      font-size: 15px;
+      padding-top: 12px;
+      border-top: 1px dashed var(--line);
     }
 
-    /* CTA footer strip (still single layer) */
-    .ctaStrip{
-      margin-top: 14px;
-      padding: 12px 0 0;
-      border-top: 1px solid var(--line);
-      display:flex; justify-content:space-between; align-items:center;
-      gap:10px; flex-wrap:wrap;
+    /* Call to Action Button */
+    .cta-btn {
+      display: block;
+      width: 100%;
+      background-color: var(--brand);
+      color: #fff;
+      text-align: center;
+      padding: 18px;
+      border-radius: var(--radius);
+      font-size: 20px;
+      font-weight: 800;
+      text-decoration: none;
+      margin-top: 40px;
+      box-shadow: 0 4px 15px rgba(183,154,107,.4);
+      transition: background 0.3s, transform 0.2s;
     }
-    .ctaText b{color:var(--brand2)}
-    .ctaHint{
-      color: var(--muted);
-      font-size: 13px;
+    .cta-btn:hover {
+      background-color: var(--brand-hover);
+      transform: translateY(-2px);
     }
 
-    /* Simple highlight line */
-    .highlight{
-      display:inline-block;
-      padding: 2px 8px;
-      border-radius: 999px;
-      background: rgba(183,154,107,.14);
-      border: 1px solid rgba(183,154,107,.24);
-      color: var(--brand2);
-      font-weight: 900;
-      font-size: 12.5px;
-      margin-inline-start: 6px;
-    }
   </style>
 </head>
 
 <body>
   <main class="wrap">
 
-    <section class="section hero" aria-label="Centella Travel Kit Hero">
-      <div class="topTag"><span class="dot"></span> Produits Original 100% • SKIN1004 • CENTELLA TRAVEL KIT</div>
-      <h1>Centella Travel Kit ✨ روتين كوري متكامل… في شنطة واحدة</h1>
-      <p class="sub">سنتيلا بقت مكون أساسي في العناية الكورية مش من فراغ 🌿 تهدئة + ترميم حاجز البشرة + ترطيب نقي ومغذي — مناسب جدًا للبشرة الحساسة والحبوب.</p>
+    <section class="section hero">
+      <div class="topTag">💯 أصلي 100% • SKIN1004</div>
+      <h1>Centella Travel Kit ✨ روتين كوري متكامل.. في شنطة واحدة</h1>
+      <p class="sub">عشان بشرتك ترتاح! السنتيلا بقت أساس العناية الكورية لأنها بتهدي البشرة، بترمم حاجز الحماية، وبتدي ترطيب نقي من غير ما تسد المسام. ممتازة جداً لو بشرتك حساسة أو بتطلع حبوب.</p>
 
-      <div class="badges" role="list">
-        <div class="badge"><span class="ico">🌿</span> سنتيلا مدغشقر <b>نقية</b></div>
-        <div class="badge"><span class="ico">🧴</span> 4 منتجات أساسية <b>في مجموعة واحدة</b></div>
-        <div class="badge"><span class="ico">✈️</span> حجم عملي <b>للسفر/التجربة</b></div>
-        <div class="badge"><span class="ico">🫧</span> لطيف ومناسب <b>للحساسية</b></div>
+      <div class="badges">
+        <div class="badge">🌿 <b>سنتيلا مدغشقر نقية</b></div>
+        <div class="badge">🧴 <b>4 منتجات في مجموعة واحدة</b></div>
+        <div class="badge">✈️ <b>حجم عملي للسفر والتجربة</b></div>
+        <div class="badge">🫧 <b>لطيفة جداً على البشرة</b></div>
       </div>
 
-      <div class="priceRow">
+      <div class="price-container">
         <div class="prices">
-         
-          <div class="after">1758 جنيه</div>
+          <span class="after">1599 ج.م</span>
+          <span class="before">2100 ج.م</span>
         </div>
-    
+        <div class="save">🔥 وفرتي 501 جنيه!</div>
       </div>
 
-      <div class="divider"></div>
-
-      <div class="gallery" aria-label="Gallery 6 Images">
-        <div class="gimg">
-          <img src="https://i.postimg.cc/wTgKRLyv/7186Six9KLL_AC_UF350_350_QL80.jpg" alt="Centella Travel Kit Image 1">
-        </div>
-        <div class="gimg">
-          <img src="https://i.postimg.cc/5NbcQLYY/photo_٢٠٢٥_١١_٠١_١٤_٠٦_٠٢.jpg" alt="Centella Travel Kit Image 2">
-        </div>
-        <div class="gimg">
-          <img src="https://i.postimg.cc/WbTRqgFD/photo_٢٠٢٥_١١_٠١_١٤_٠٦_٢٠.jpg" alt="Centella Travel Kit Image 3">
-        </div>
-        <div class="gimg">
-          <img src="https://i.postimg.cc/TYf85gLp/photo_٢٠٢٥_١١_٠١_١٤_٠٧_٢٠.jpg" alt="Centella Travel Kit Image 4">
-        </div>
-        <div class="gimg">
-          <img src="https://i.postimg.cc/m2Bx1CzF/photo_٢٠٢٥_١١_٠١_١٤_٠٧_٢١_(2).jpg" alt="Centella Travel Kit Image 5">
-        </div>
-        <div class="gimg">
-          <img src="https://i.postimg.cc/zX8mHKbg/photo_٢٠٢٥_١١_٠١_١٤_٠٧_٢٣.jpg" alt="Centella Travel Kit Image 6">
-        </div>
+      <div class="gallery">
+        <div class="gimg"><img src="https://i.postimg.cc/wTgKRLyv/7186Six9KLL_AC_UF350_350_QL80.jpg" alt="Centella Travel Kit"></div>
+        <div class="gimg"><img src="https://i.postimg.cc/5NbcQLYY/photo_٢٠٢٥_١١_٠١_١٤_٠٦_٠٢.jpg" alt="صورة للمنتج على الطبيعة 1"></div>
+        <div class="gimg"><img src="https://i.postimg.cc/WbTRqgFD/photo_٢٠٢٥_١١_٠١_١٤_٠٦_٢٠.jpg" alt="صورة للمنتج على الطبيعة 2"></div>
+        <div class="gimg"><img src="https://i.postimg.cc/TYf85gLp/photo_٢٠٢٥_١١_٠١_١٤_٠٧_٢٠.jpg" alt="صورة للمنتج على الطبيعة 3"></div>
+        <div class="gimg"><img src="https://i.postimg.cc/m2Bx1CzF/photo_٢٠٢٥_١١_٠١_١٤_٠٧_٢١_(2).jpg" alt="صورة للمنتج على الطبيعة 4"></div>
+        <div class="gimg"><img src="https://i.postimg.cc/zX8mHKbg/photo_٢٠٢٥_١١_٠١_١٤_٠٧_٢٣.jpg" alt="صورة للمنتج على الطبيعة 5"></div>
       </div>
-
-      
     </section>
 
     <div class="divider"></div>
 
-    <section class="section" aria-label="Why Centella">
-      <h2>ليه سنتيلا؟ <span class="highlight">تهدئة + ترميم + ترطيب</span></h2>
-      <p class="muted">نبتة علاجية بتدي بشرتك دعم واضح… خصوصًا لو بشرتك حساسة أو بتتلخبط بسرعة.</p>
+    <section class="section">
+      <h2>ليه تجربي السنتيلا؟ <span class="highlight">(تهدئة + ترميم)</span></h2>
+      <p class="sub">مكون سحري بيدي بشرتك الدعم اللي محتاجاه، خصوصاً وقت اللخبطة والالتهاب.</p>
       <ul class="bullets">
-        <li>تهدئة فورية للالتهابات والاحمرار</li>
-        <li>ترميم لحاجز البشرة وتقليل الإحساس بالشد</li>
-        <li>ترطيب نقي ومغذي بدون ثقل</li>
-        <li>معالجة فعالة للحبوب وآثارها</li>
-        <li>مناسبة للاستخدام اليومي صباحًا ومساءً</li>
-        <li>حجم مثالي للسفر والتجربة</li>
+        <li>بتهدي الالتهابات والاحمرار فوراً</li>
+        <li>بترمم حاجز البشرة وبتقلل إحساس الشد الجاف</li>
+        <li>ترطيب نقي ومغذي من غير ما يسيب ملمس دهني</li>
+        <li>بتساعد جداً في تصفية البشرة من الحبوب وآثارها</li>
+        <li>آمنة للاستخدام اليومي (صبح وليل)</li>
+        <li>حجم المجموعة دي ممتاز عشان تجربي الروتين كامل</li>
       </ul>
     </section>
 
     <div class="divider"></div>
 
-    <section class="section" aria-label="Kit Contents">
-      <h2>محتويات مجموعة سنتيلا ترافيل كيت</h2>
-
+    <section class="section">
+      <h2>المجموعة فيها إيه بالظبط؟</h2>
       <div class="items">
         <div class="item">
-          <b>تونر سنتيلا – Centella Toner (30ml)</b>
-          <div class="mini">ينقّي البشرة وينعشها بعد الغسول، وبيساعد في تهدئة المسام وتحضير البشرة لباقي الخطوات.</div>
+          <b>غسول سنتيلا – Ampoule Foam (20ml)</b>
+          <div class="mini">بينضف الوش بلطف جداً من غير ما ينشفه أو ياخد الزيوت الطبيعية اللي بتحمي بشرتك.</div>
         </div>
-
         <div class="item">
-          <b>سيروم سنتيلا – Centella Ampoule (30ml)</b>
-          <div class="mini">تركيز عالي من السنتيلا: تهدئة الالتهابات + تعزيز النضارة + تقليل الآثار والتصبغات.</div>
+          <b>تونر سنتيلا – Toning Toner (30ml)</b>
+          <div class="mini">بينعش البشرة بعد الغسول، بيقفل المسام، وبيجهز وشك عشان يمتص السيروم صح.</div>
         </div>
-
         <div class="item">
-          <b>كريم سنتيلا – Centella Soothing Cream (20ml)</b>
-          <div class="mini">ملمس كريمي خفيف… يريح البشرة ويوفر ترطيب عميق يدوم طول اليوم أو طول الليل.</div>
+          <b>سيروم سنتيلا – Ampoule (30ml)</b>
+          <div class="mini">الخلاصة كلها هنا! تركيز عالي بيهدي الالتهاب، بيدي نضارة، وبيقلل التصبغات والآثار.</div>
         </div>
-
         <div class="item">
-          <b>غسول سنتيلا – Centella Ampoule Foam (20ml)</b>
-          <div class="mini">ينظّف بلطف بدون ما يجرّد البشرة من الزيوت الطبيعية — مناسب للبشرة الحساسة.</div>
+          <b>كريم سنتيلا – Soothing Cream (20ml)</b>
+          <div class="mini">أخر خطوة تقفلي بيها.. خفيف جداً، بيريح البشرة وبيدي ترطيب عميق يكمل معاكي اليوم.</div>
         </div>
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <section class="section" aria-label="Suitable For">
-      <h2>مناسبة لمين؟</h2>
-      <ul class="bullets">
-        <li>البشرة الحساسة</li>
-        <li>البشرة المعرّضة للحبوب</li>
-        <li>احمرار والتهابات متكررة</li>
-        <li>ضعف في حاجز البشرة / تقشير</li>
-        <li>لو عايزة تجربة كاملة قبل الحجم الكبير</li>
-        <li>للسفر أو الشنطة اليومية</li>
-      </ul>
-    </section>
-
-    <div class="divider"></div>
-
-    <section class="section" aria-label="Reviews">
+    <section class="section">
       <div class="reviewsHead">
-        <h2>تقييمات العملاء</h2>
-        <div class="rating" aria-label="Overall Rating">
-          <span class="stars">★★★★★</span>
-          <span>4.8/5</span>
-          <span class="count">• 18 تقييم</span>
+        <h2>رأي البنات اللي جربوها</h2>
+        <div class="rating">
+          <span>★★★★★</span>
+          <span class="count">4.8 (18 تقييم)</span>
         </div>
       </div>
-      <p class="muted">كل التقييمات ظاهرة بالكامل زي ما طلبت ✅</p>
 
       <div class="reviews">
         <div class="rev">
           <div class="who">ندى <span>★★★★★</span></div>
-          <p class="txt">الاحمرار عندي قل بسرعة، وبشرتي بقت أهدى من أول أسبوع.</p>
+          <p class="txt">الاحمرار عندي قل بسرعة، وبشرتي بقت أهدى من أول أسبوع بجد.</p>
         </div>
         <div class="rev">
           <div class="who">مريم <span>★★★★★</span></div>
-          <p class="txt">المجموعة حجمها ممتاز للسفر… وكل خطوة مريحة للبشرة.</p>
-        </div>
-        <div class="rev">
-          <div class="who">سارة <span>★★★★★</span></div>
-          <p class="txt">الغسول لطيف جدًا ومش بينشف… وده كان أهم حاجة عندي.</p>
-        </div>
-        <div class="rev">
-          <div class="who">نور <span>★★★★★</span></div>
-          <p class="txt">السيروم تحفة! حسّيت بترطيب ونضارة من غير أي تهييج.</p>
+          <p class="txt">حجمها ممتاز أخدتها معايا في السفر.. مريحة جداً ومفيش خطوة حسستني بتقل.</p>
         </div>
         <div class="rev">
           <div class="who">هاجر <span>★★★★☆</span></div>
-          <p class="txt">مناسب للبشرة الحساسة، بس بحتاج ألتزم شوية عشان أشوف نتيجة أقوى.</p>
+          <p class="txt">حلوة أوي ومناسبة لبشرتي الحساسة، بس محتاجة التزام عشان تشوفي النتيجة الكاملة للآثار.</p>
         </div>
         <div class="rev">
           <div class="who">آية <span>★★★★★</span></div>
-          <p class="txt">الكريم خفيف ومش دهني… أحسن حاجة قبل النوم.</p>
-        </div>
-        <div class="rev">
-          <div class="who">مي <span>★★★★★</span></div>
-          <p class="txt">روتين كامل في شنطة واحدة… أنا مبسوطة جدًا بالمجموعة.</p>
-        </div>
-        <div class="rev">
-          <div class="who">ريم <span>★★★★★</span></div>
-          <p class="txt">كانت بشرتي متهيجة… بعد الاستخدام بقت أنعم وأهدى.</p>
-        </div>
-        <div class="rev">
-          <div class="who">نهى <span>★★★★☆</span></div>
-          <p class="txt">حلوة جدًا للتجربة قبل ما أجيب الحجم الكبير، وفعلاً مريحة.</p>
-        </div>
-        <div class="rev">
-          <div class="who">شيماء <span>★★★★★</span></div>
-          <p class="txt">الروتين ده ساعدني على الحبوب الصغيرة والاحمرار حوالين الأنف.</p>
-        </div>
-        <div class="rev">
-          <div class="who">ياسمين <span>★★★★★</span></div>
-          <p class="txt">المنتج أصلي وواضح في القوام والرائحة… تجربة ممتازة.</p>
-        </div>
-        <div class="rev">
-          <div class="who">رنا <span>★★★★★</span></div>
-          <p class="txt">التونر منعش وبيجهّز البشرة… حسيت إن امتصاص السيروم اتحسن.</p>
-        </div>
-        <div class="rev">
-          <div class="who">دينا <span>★★★★☆</span></div>
-          <p class="txt">نتيجته حلوة، وخصوصًا مع الاستمرار… من غير ما يعمل انسداد مسام.</p>
-        </div>
-        <div class="rev">
-          <div class="who">فاطمة <span>★★★★★</span></div>
-          <p class="txt">بالنسبة لي أحسن حاجة إنه لطيف جدًا… مفيش لسعة ولا تهيج.</p>
-        </div>
-        <div class="rev">
-          <div class="who">بسمة <span>★★★★★</span></div>
-          <p class="txt">الكريم بيرطب من غير ما يسيب لمعة… مناسب للبشرة المختلطة.</p>
-        </div>
-        <div class="rev">
-          <div class="who">جنى <span>★★★★★</span></div>
-          <p class="txt">خدت المجموعة سفر… كانت منقذة! بشرتي فضلت متوازنة.</p>
-        </div>
-        <div class="rev">
-          <div class="who">روان <span>★★★★☆</span></div>
-          <p class="txt">حبيته جدًا… بس كنت عايزة حجم أكبر 😄 ده الوحيد اللي ناقص.</p>
-        </div>
-        <div class="rev">
-          <div class="who">إسراء <span>★★★★★</span></div>
-          <p class="txt">الآثار عندي بدأت تخف… وملمس البشرة اتحسن بشكل ملحوظ.</p>
+          <p class="txt">الكريم بتاعهم خطير، خفيف ومش دهني خالص.. أحلى حاجة بحطها قبل ما أنام.</p>
         </div>
       </div>
     </section>
 
     <div class="divider"></div>
 
-    <section class="section" aria-label="Why Buy">
-      <h2>ليه تشتري من متجرنا؟</h2>
-      <ul class="why">
-        <li>✅ منتجات أصلية 100%</li>
-        <li>✅ مصدر موثوق وفاتورة/تتبع حسب المتاح</li>
-        <li>✅ شحن سريع داخل مصر</li>
-        <li>✅ خدمة عملاء قبل وبعد الطلب</li>
-        <li>✅ تغليف آمن ومحترف</li>
-        <li>✅ ثقة آلاف العملاء</li>
+    <section class="section">
+      <h2>ليه تطلبي من Center To You؟</h2>
+      <ul class="bullets">
+        <li>✅ ضمان إن المنتج أصلي 100%</li>
+        <li>✅ شحن سريع ومضمون لأي مكان في مصر</li>
+        <li>✅ معاكي خدمة عملاء قبل وبعد ما تستلمي الأوردر</li>
+        <li>✅ التغليف آمن جداً عشان يوصلك سليم</li>
       </ul>
-
-      <div class="ctaStrip">
-        <div class="ctaText">
-          <b>السعر الآن:</b> 1758 جنيه <span class="muted">بدل</span> <span class="before" style="font-size:14px">2100</span>
-        </div>
-        
-
-      <div style="margin-top:10px"></div>
-      </section>
+    </section>
 
     <div class="divider"></div>
 
-    <section class="section" aria-label="FAQ">
-      <h2>الأسئلة الشائعة</h2>
-
-      <details>
-        <summary>هل المجموعة أصلية 100%؟</summary>
-        <p>أيوه ✅ مجموعة SKIN1004 أصلية 100%.</p>
-      </details>
-
+    <section class="section">
+      <h2>أسئلة بتيجي في بالنا</h2>
       <details>
         <summary>هل تنفع للبشرة الحساسة؟</summary>
-        <p>نعم جدًا — السنتيلا معروفة بتهدئة الاحمرار ودعم حاجز البشرة.</p>
+        <p>جداً! السنتيلا أصلاً معروفة إنها أحسن حاجة لتهدئة الاحمرار ودعم حاجز البشرة الحساسة.</p>
       </details>
-
       <details>
-        <summary>هل تنفع للحبوب وآثارها؟</summary>
-        <p>بتساعد على تقليل الالتهاب والاحمرار، ومع الاستمرار ممكن تلاحظي تحسن في آثار الحبوب.</p>
+        <summary>أستخدم الخطوات إزاي؟</summary>
+        <p>الترتيب الصح: الغسول الأول، بعدين التونر بقطنة أو بإيدك، بعده السيروم (الأمبول)، وأخيراً تقفلي بالكريم. مرتين في اليوم (صبح وليل).</p>
       </details>
-
       <details>
-        <summary>أستخدمها إزاي (ترتيب الروتين)؟</summary>
-        <p>غسول → تونر → سيروم (أمبول) → كريم. صباحًا ومساءً حسب احتياج بشرتك.</p>
+        <summary>أصلية؟</summary>
+        <p>أكيد، كل منتجات SKIN1004 عندنا أصلية 100%.</p>
       </details>
-
-      <details>
-        <summary>هل تنفع كتجربة قبل الحجم الكبير؟</summary>
-        <p>ده من أفضل استخداماتها: تجربة روتين كامل بحجم عملي قبل ما تشتري المقاسات الكبيرة.</p>
-      </details>
-
-  
     </section>
 
+   
   </main>
 </body>
 </html>
